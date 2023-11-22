@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+#okyanus {
+  background: url(okyanus.jpg);
+  height: auto;
+  width: 50vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transition: all 2s;
+}
+#okyanus button {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%);
+}
+#okyanusbilgi {
+  color: #f5d547;
+  font-weight: 900;
+  font-size: xx-large;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-top: 25rem;
+}
+#ormanbilgi {
+  color: red;
+  font-weight: 900;
+  font-size: xx-large;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-top: 25rem;
+}
+
+#orman {
+  background: url(ormanev.jpg);
+  height: auto;
+  width: 50vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transition: all 2s;
+}
+
+#orman button {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%);
+}
+button {
+  padding: 0.8rem;
+  border-radius: 15px;
+  border: none;
+  opacity: 0.5;
+  background: transparent;
+  border: 9px solid white;
+  color: yellow;
+  font-weight: bolder;
+  transition: opacity 0.5s ease;
+}
+#orman button {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  color: black;
+  border: 9px solid black;
+}
+button:hover {
+  background-color: red;
+}
+
+@media (max-width: 400px) {
+  #ormanbilgi {
+    font-weight: bold;
+    font-size: medium;
+  }
+  #okyanusbilgi {
+    font-weight:bold;
+    font-size: medium;
+  }
+}
